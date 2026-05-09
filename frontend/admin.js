@@ -1,4 +1,11 @@
+/* =========================================================
+   NextGen Digital Academy — Admin JS Placeholder
+   Full Admin Command Center logic will be built in Phase 4/5.
+========================================================= */
+
 "use strict";
+
+console.log("NextGen Admin Engine ready.");"use strict";
 /* NextGen Digital Academy — Admin Engine /frontend/admin.js */
 const ADMIN_PASSWORD="NextGen@2025",ADMIN_SESSION="nextgen_admin_authenticated";const KEYS={courses:"nextgen_courses",blogs:"nextgen_blogs",comments:"nextgen_comments",dbVersion:"nextgen_db_version"};
 const DEFAULT_COURSES=[
