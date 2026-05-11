@@ -1,1 +1,0 @@
-# nextgen-digital-academy
