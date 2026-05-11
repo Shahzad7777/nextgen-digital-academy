@@ -1,0 +1,10 @@
+﻿{
+  "name": "nextgen-digital-academy",
+  "version": "1.0.0",
+  "description": "NextGen Digital Academy structure placeholder",
+  "scripts": {
+    "dev": "nodemon backend/server.js",
+    "start": "node backend/server.js",
+    "seed": "node scripts/seed.js"
+  }
+}
