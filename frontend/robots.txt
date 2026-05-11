@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /admin
-Disallow: /admin.html
-
-Sitemap: https://nextgen-digital-academy-online.vercel.app/sitemap.xml
