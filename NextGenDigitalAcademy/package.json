@@ -1,10 +1,32 @@
-﻿{
+{
   "name": "nextgen-digital-academy",
   "version": "1.0.0",
-  "description": "NextGen Digital Academy structure placeholder",
+  "description": "NextGen Digital Academy - Online digital skills learning platform with courses, enrollment, payment instructions, and admin-ready structure.",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "nodemon backend/server.js",
-    "start": "node backend/server.js",
-    "seed": "node scripts/seed.js"
+    "dev": "npx serve frontend",
+    "start": "npx serve frontend",
+    "build": "echo \"Static frontend project - no build step required\"",
+    "preview": "npx serve frontend",
+    "deploy-check": "node scripts/deploy-check.js"
+  },
+  "keywords": [
+    "nextgen digital academy",
+    "online academy",
+    "digital marketing course",
+    "freelancing course",
+    "online learning",
+    "pakistan online courses",
+    "static website",
+    "vercel"
+  ],
+  "author": "NextGen Digital Academy",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
