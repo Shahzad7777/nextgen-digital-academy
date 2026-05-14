@@ -1,1 +1,92 @@
-﻿<!-- Admin panel - code will be added later -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - NextGen Digital Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="/" class="nav-logo">
+        <span class="logo-icon">N</span>
+        <span class="logo-text">NextGen <span class="accent">Academy</span> <small style="font-size: 0.7rem; color: var(--text-muted);">Admin</small></span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="#" class="nav-link btn-nav" id="logoutBtn">Sign Out</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="dashboard-section">
+    <div class="container">
+      <div class="dashboard-header">
+        <h1>Admin <span class="accent">Dashboard</span></h1>
+      </div>
+
+      <div class="dashboard-stats">
+        <div class="dashboard-stat-card">
+          <h3>Total Users</h3>
+          <div class="value" id="totalUsers">-</div>
+        </div>
+        <div class="dashboard-stat-card">
+          <h3>Enrollments</h3>
+          <div class="value" id="totalEnrollments">-</div>
+        </div>
+        <div class="dashboard-stat-card">
+          <h3>Contact Messages</h3>
+          <div class="value" id="totalMessages">-</div>
+        </div>
+      </div>
+
+      <h2 style="margin-bottom: 20px;">Recent Enrollment Requests</h2>
+      <div class="dashboard-table-wrap">
+        <table class="dashboard-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Course</th>
+              <th>Status</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody id="adminEnrollmentTable">
+            <tr>
+              <td colspan="5" style="text-align: center; padding: 40px;">Loading...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 style="margin: 40px 0 20px;">Recent Contact Messages</h2>
+      <div class="dashboard-table-wrap">
+        <table class="dashboard-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Subject</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody id="adminContactTable">
+            <tr>
+              <td colspan="4" style="text-align: center; padding: 40px;">Loading...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <script src="/js/config.js"></script>
+  <script src="/js/admin.js"></script>
+</body>
+</html>

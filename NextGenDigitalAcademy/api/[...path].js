@@ -1,1 +1,5 @@
-﻿// Vercel serverless API entry will be added later
+import app from '../backend/app.js';
+
+export default function handler(req, res) {
+  app(req, res);
+}

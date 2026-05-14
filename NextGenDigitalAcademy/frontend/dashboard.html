@@ -1,1 +1,72 @@
-﻿<!-- Student dashboard - code will be added later -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - NextGen Digital Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="/" class="nav-logo">
+        <span class="logo-icon">N</span>
+        <span class="logo-text">NextGen <span class="accent">Academy</span></span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/#courses" class="nav-link">Courses</a></li>
+        <li><a href="#" class="nav-link btn-nav" id="logoutBtn">Sign Out</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="dashboard-section">
+    <div class="container">
+      <div class="dashboard-header">
+        <h1>Welcome, <span class="accent" id="userName">Student</span></h1>
+      </div>
+
+      <div class="dashboard-stats">
+        <div class="dashboard-stat-card">
+          <h3>Enrolled Courses</h3>
+          <div class="value" id="enrolledCount">0</div>
+        </div>
+        <div class="dashboard-stat-card">
+          <h3>Completed</h3>
+          <div class="value" id="completedCount">0</div>
+        </div>
+        <div class="dashboard-stat-card">
+          <h3>Certificates</h3>
+          <div class="value" id="certCount">0</div>
+        </div>
+      </div>
+
+      <h2 style="margin-bottom: 20px;">My Courses</h2>
+      <div class="dashboard-table-wrap">
+        <table class="dashboard-table">
+          <thead>
+            <tr>
+              <th>Course</th>
+              <th>Status</th>
+              <th>Enrolled</th>
+            </tr>
+          </thead>
+          <tbody id="enrollmentTable">
+            <tr>
+              <td colspan="3" style="text-align: center; padding: 40px;">No enrollments yet. <a href="/#courses">Browse courses</a> to get started.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <script src="/js/config.js"></script>
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>

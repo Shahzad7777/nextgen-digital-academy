@@ -1,14 +1,17 @@
 {
   "name": "nextgen-digital-academy",
   "version": "1.0.0",
-  "description": "NextGen Digital Academy - Online digital skills learning platform with courses, enrollment, payment instructions, and admin-ready structure.",
+  "description": "NextGen Digital Academy - Online digital skills learning platform with courses, enrollment, contact forms, and admin panel.",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "npx serve frontend",
     "start": "npx serve frontend",
+    "server": "node backend/server.js",
+    "dev:all": "npx concurrently \"npm run server\" \"npm run dev\"",
     "build": "echo \"Static frontend project - no build step required\"",
     "preview": "npx serve frontend",
+    "seed": "node scripts/seed.js",
     "deploy-check": "node scripts/deploy-check.js"
   },
   "keywords": [
@@ -23,6 +26,10 @@
   ],
   "author": "NextGen Digital Academy",
   "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0"
+  },
   "devDependencies": {
     "serve": "^14.2.4"
   },

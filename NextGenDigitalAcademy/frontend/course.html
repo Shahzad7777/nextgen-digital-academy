@@ -1,1 +1,78 @@
-﻿<!-- Course detail page - code will be added later -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Details - NextGen Digital Academy</title>
+  <meta name="description" content="Explore course details, curriculum, and enrollment options at NextGen Digital Academy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="/" class="nav-logo">
+        <span class="logo-icon">N</span>
+        <span class="logo-text">NextGen <span class="accent">Academy</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/#courses" class="nav-link">Courses</a></li>
+        <li><a href="/#about" class="nav-link">About</a></li>
+        <li><a href="/#contact" class="nav-link">Contact</a></li>
+        <li><a href="/login.html" class="nav-link btn-nav">Sign In</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="course-detail-section">
+    <div class="container">
+      <div class="course-detail-grid" id="courseDetail">
+        <p style="color: var(--text-secondary);">Loading course details...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enrollment Modal -->
+  <div class="modal-overlay" id="enrollModal">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <h2>Enroll in <span class="accent" id="enrollCourseTitle"></span></h2>
+      <form class="contact-form" id="enrollForm">
+        <div class="form-group">
+          <label for="enrollName">Full Name</label>
+          <input type="text" id="enrollName" name="name" required placeholder="Your full name">
+        </div>
+        <div class="form-group">
+          <label for="enrollEmail">Email Address</label>
+          <input type="email" id="enrollEmail" name="email" required placeholder="you@example.com">
+        </div>
+        <div class="form-group">
+          <label for="enrollPhone">Phone / WhatsApp</label>
+          <input type="tel" id="enrollPhone" name="phone" required placeholder="+92 3XX XXXXXXX">
+        </div>
+        <input type="hidden" id="enrollCourseId" name="courseId">
+        <button type="submit" class="btn btn-primary btn-full">Submit Enrollment Request</button>
+        <div class="form-status" id="enrollStatus"></div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2025 NextGen Digital Academy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/config.js"></script>
+  <script src="/js/course-detail.js"></script>
+</body>
+</html>
